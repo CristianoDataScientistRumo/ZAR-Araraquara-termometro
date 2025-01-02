@@ -1,0 +1,7 @@
+# Ignorar a pasta da virtual environment
+venv/
+
+# Outros arquivos ou pastas que você deseja ignorar
+*.pyc
+__pycache__/
+.DS_Store
