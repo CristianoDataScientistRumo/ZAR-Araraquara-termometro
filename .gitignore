@@ -1,5 +1,6 @@
 # Ignorar a pasta da virtual environment
-venv/
+*venv/
+*.ipynb_checkpoints
 
 # Outros arquivos ou pastas que você deseja ignorar
 *.pyc
