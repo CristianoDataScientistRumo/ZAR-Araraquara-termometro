@@ -1,5 +1,5 @@
 # Ignorar a pasta da virtual environment
-*venv/
+venv/
 
 # Outros arquivos ou pastas que você deseja ignorar
 *.pyc
