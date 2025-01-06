@@ -1,4 +1,5 @@
-[]("https://www.gov.br/transportes/pt-br/assuntos/noticias/2022/08/novo-terminal-ferroviario-em-rio-verde-go-vai-movimentar-3-5-milhoes-de-toneladas-por-ano/terminal_rumo_rioverde.jpeg")
+![Terminal Ferroviário em Rio Verde](https://www.gov.br/transportes/pt-br/assuntos/noticias/2022/08/novo-terminal-ferroviario-em-rio-verde-go-vai-movimentar-3-5-milhoes-de-toneladas-por-ano/terminal_rumo_rioverde.jpeg)
+
 # Análise de Erros de Termômetros de Linha Férrea
 
 Este repositório contém análises e visualizações baseadas em um DataFrame com dados de medições de temperatura em termômetros de linha férrea. O objetivo principal é identificar padrões de erro, analisar a dispersão dos dados e entender como os erros evoluem ao longo do tempo.
