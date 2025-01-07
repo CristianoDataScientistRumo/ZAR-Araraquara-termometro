@@ -10,22 +10,8 @@ Este repositório contém análises e visualizações baseadas em dados de medi�
 
 ### Código de Análise
 
-- **Geração de gráficos interativos** utilizando **Plotly**.
-- **Análise estatística** dos dados de temperatura e erros.
-
-### Gráficos Gerados
-
-1. **Percentual de Erros por Termômetro**  
-   Gráfico de barras mostrando o percentual de erros por termômetro.
-
-2. **Dispersão das Temperaturas por Termômetro**  
-   Boxplot para visualizar a dispersão das medições de temperatura.
-
-3. **Percentual de Erros por Tipo de Erro**  
-   Gráfico de barras indicando os diferentes tipos de erros para cada termômetro.
-
-4. **Evolução Temporal dos Erros**  
-   Gráfico de linhas mostrando a quantidade de erros ao longo do tempo.
+1. **Geração de gráficos interativos** utilizando **Plotly**.  
+2. **Análise estatística** dos dados de temperatura e erros.
 
 ---
 
@@ -33,7 +19,7 @@ Este repositório contém análises e visualizações baseadas em dados de medi�
 
 As análises foram realizadas com base nas seguintes colunas principais:
 
-| Coluna                | Descrição                                             |
+| **Coluna**            | **Descrição**                                       |
 |-----------------------|-----------------------------------------------------|
 | `regiao`             | Região onde o termômetro está localizado            |
 | `operacao`           | Identificação da operação associada                 |
@@ -52,9 +38,16 @@ As análises foram realizadas com base nas seguintes colunas principais:
 
 - **Descrição**: Este gráfico exibe o percentual de erros registrados por termômetro, agrupados por região.  
 - **Objetivo**: Identificar quais termômetros apresentam maior taxa de erros.  
-- **Exemplo de Visualização**:
+- **Exemplo de Código**:
 
 ```python
-fig = px.bar(df, x='original', y='percentual_erros', color='regiao', title='Percentual de Erros por Termômetro')
+import plotly.express as px
+
+fig = px.bar(df, x='original', y='percentual_erros', color='regiao', 
+             title='Percentual de Erros por Termômetro',
+             labels={'original': 'Termômetro', 'percentual_erros': 'Percentual de Erros (%)'})
 fig.show()
+
+
+
 
