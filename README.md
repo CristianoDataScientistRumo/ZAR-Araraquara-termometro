@@ -48,53 +48,5 @@ fig = px.bar(df, x='original', y='percentual_erros', color='regiao',
              labels={'original': 'Termômetro', 'percentual_erros': 'Percentual de Erros (%)'})
 fig.show()
 
-2. Dispersão das Temperaturas por Termômetro
-Descrição: Boxplot para mostrar a dispersão das temperaturas medidas por cada termômetro.
-Objetivo: Analisar a consistência das medições.
-Exemplo de Código:
-
-fig = px.box(df, x='original', y='temperaturatermometro', color='regiao', 
-             title='Dispersão das Temperaturas por Termômetro',
-             labels={'original': 'Termômetro', 'temperaturatermometro': 'Temperatura (°C)'})
-fig.show()
-___
-3. Percentual de Erros por Tipo de Erro
-Descrição: Gráfico de barras agrupadas para indicar os diferentes tipos de erros.
-Objetivo: Identificar os erros mais comuns e sua distribuição.
-Exemplo de Código:
-python
-Copiar código
-fig = px.bar(df, x='tipo_erro', y='percentual_erros', color='regiao', 
-             title='Percentual de Erros por Tipo de Erro',
-             labels={'tipo_erro': 'Tipo de Erro', 'percentual_erros': 'Percentual de Erros (%)'})
-fig.show()
-___
-4. Evolução Temporal dos Erros
-Descrição: Gráfico de linhas mostrando a evolução dos erros ao longo do tempo.
-Objetivo: Observar tendências sazonais ou padrões temporais.
-Exemplo de Código:
-
-fig = px.line(df, x='dataref', y='quantidade_erros', color='regiao', 
-              title='Evolução Temporal dos Erros',
-              labels={'dataref': 'Data', 'quantidade_erros': 'Quantidade de Erros'})
-fig.show()
-___
-## Tecnologias Utilizadas
-* Python: Linguagem principal para análise de dados.
-* Pandas: Manipulação e agrupamento de dados.
-* Plotly: Criação de gráficos interativos.
-
-## Como Executar:
-
-git clone https://github.com/seu-usuario/analise-erros-termometros.git
-### Instale as dependências:
-pip install -r requirements.txt
-### Execute os scripts de análise:
-python analise_erros.py
-## Licença
-### Este projeto está licenciado sob a MIT License.
-
-### Autor: Cristiano Santana - Rumo Logística
-
 
 
